@@ -50,7 +50,7 @@ class ImagenProc():
         image_blue[:,:,1] = 0
         return (image_red, image_green, image_blue)
 
-    def crop_image(self, y1,y2, x1,x2):
+    def crop_image(self, x1, y1, x2, y2):
         self.image = self.image[y1:y2, x1:x2]
 
     def show_image(self, show_color_canal = False, title_orig = "Imagen original", show = True, gray = False):
